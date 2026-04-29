@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "possession",
+  "version": "${version}",
+  "name": "Possession",
+  "description": "A Fabric 1.20.1 mod focused on possessing creatures, sharing their perspective, and using species-specific abilities through a Soul Charm trinket.",
+  "authors": [
+    "daoyucun"
+  ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/possession/textures/item/soul_charm.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.muzu1.possession.PossessionMod"
+    ],
+    "client": [
+      "dev.muzu1.possession.client.PossessionModClient"
+    ]
+  },
+  "mixins": [
+    "possession.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*",
+    "trinkets": ">=3.7.2"
+  }
+}

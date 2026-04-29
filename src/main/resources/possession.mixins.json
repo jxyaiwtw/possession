@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "dev.muzu1.possession.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "LivingEntityInvoker",
+    "MobEntityAccessor",
+    "MobEntityDropChancesAccessor"
+  ],
+  "client": [
+    "ClientPlayerEntityMixin",
+    "InGameHudMixin",
+    "MinecraftClientMixin",
+    "MouseMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
